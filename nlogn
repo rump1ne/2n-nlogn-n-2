@@ -1,9 +1,9 @@
 #include <iostream>
-
+#define N 3
 using namespace std;
 
 
-const int n = 3;
+
 
 
 bool search(int row[], int target) 
