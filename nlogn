@@ -53,7 +53,7 @@ int main() {
     };
 
     int target;
-    cout << "Введите искомое число";
+    cout << "Введите искомое число: ";
     cin >> target;
     if (number(arr, target)) {
     cout << "Число " << target << " найдено в матрице." << endl;
