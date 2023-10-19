@@ -53,13 +53,13 @@ int main() {
     };
 
     int target;
-    cout << "Введите искомое число: ";
+    cout << "Enter the desired number: ";
     cin >> target;
     if (number(arr, target)) {
-    cout << "Число " << target << " найдено в матрице." << endl;
+    cout << "Number " << target << " Found in the matrix." << endl;
     }
     else {
-    cout << "Число " << target << " не найдено в матрице." << endl;
+    cout << "Number " << target << " Not found in the matrix." << endl;
     }
 
     return 0;
