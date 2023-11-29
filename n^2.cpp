@@ -12,9 +12,9 @@ bool number(int array[n][n], int target) {
     return false;
 }
     
-int main() 
-{
-	setlocale(LC_ALL, "rus");
+int main() {
+setlocale(LC_ALL, "rus");
+	
 	int array[n][n] = 
   {
 		{1, 2, 3},
