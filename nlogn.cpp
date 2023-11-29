@@ -43,6 +43,8 @@ bool number(int matrix[n][n], int target)
 }
 
 int main() {
+setlocale(LC_ALL, "Russian");
+    
     int arr[n][n] = 
   {
     {1, 2, 3},
