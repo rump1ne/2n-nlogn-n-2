@@ -22,14 +22,14 @@ int main()
 		{7, 8, 9}
 	};
 	int target;
-	std::cout << "Enter the desired number: ";
+	std::cout << "Введите желаемый номер: ";
 	std::cin >> target;
 	if(number(array,target))
   { 
-		std::cout << "Number " << target << " Found in the matrix\n";
+		std::cout << "Номер " << target << " Найден в матрице\n";
 	}
 	else 
   {
-		std::cout << "Number " << target << " Not found in the matrix\n";
+		std::cout << "Номер " << target << " Не найден в матрице\n";
 	}
 }
