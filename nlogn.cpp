@@ -1,5 +1,5 @@
 #include <iostream>
-#define N 3
+#define n 3
 using namespace std;
 
 
