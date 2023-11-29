@@ -4,8 +4,6 @@ using namespace std;
 
 
 
-
-
 bool search(int row[], int target) 
 {
     int left = 0;
