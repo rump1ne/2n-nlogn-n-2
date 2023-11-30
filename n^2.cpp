@@ -13,7 +13,7 @@ bool number(int array[n][n], int target) {
 }
     
 int main() {
-setlocale(LC_ALL, "rus");
+setlocale(LC_ALL, "Russian");
 	
 	int array[n][n] = 
   {
