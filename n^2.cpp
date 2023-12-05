@@ -1,5 +1,5 @@
 #include <iostream>
-#define n 3
+#define N 3
 
 bool number(int array[n][n], int target) {
 	for (int i = 0; i < n; i++) {
