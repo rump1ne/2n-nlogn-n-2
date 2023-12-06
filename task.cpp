@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// Function to search for a number in a two-dimensional array using the 2n algorithm
+//Функция для поиска числа в двумерном массиве с использованием алгоритма 2n
 bool linearSearch(const vector<vector<int>>& arr, int target) {
     int rows = arr.size();
     int cols = arr[0].size();
@@ -20,7 +20,7 @@ bool linearSearch(const vector<vector<int>>& arr, int target) {
     return false;
 }
 
-// Function to search for a number in a sorted one-dimensional array using the logn algorithm
+//Функция для поиска числа в отсортированном одномерном массиве с использованием алгоритма logn
 bool binarySearch(const vector<int>& arr, int target) {
     int low = 0;
     int high = arr.size() - 1;
@@ -40,7 +40,7 @@ bool binarySearch(const vector<int>& arr, int target) {
     return false;
 }
 
-// Function to search for a number in a two-dimensional array using the n^2 algorithm
+//Функция для поиска числа в двумерном массиве с использованием алгоритма n^ 2
 bool quadraticSearch(const vector<vector<int>>& arr, int target) {
     int rows = arr.size();
     int cols = arr[0].size();
@@ -57,34 +57,34 @@ bool quadraticSearch(const vector<vector<int>>& arr, int target) {
 }
 
 int main() {
-    // Create a two-dimensional array
+    //Создаём двумерный массив
     vector<vector<int>> arr = {
         {1, 2, 3},
         {4, 5, 6},
         {7, 8, 9}
     };
 
-    // Get the number to search for from the user
+    //Получаем от пользователя номер для поиска
     int target;
-    cout << "Enter a number to search for: ";
+    cout << "Введите номер для поиска: ";
     cin >> target;
 
-    // Search for the number using different algorithms
+    //Поиск номера с использованием различных алгоритмов
     bool found_2n = linearSearch(arr, target);
     bool found_logn = binarySearch({1, 2, 3, 4, 5, 6, 7, 8, 9}, target);
     bool found_n2 = quadraticSearch(arr, target);
 
-    // Print the results
-    cout << "Using the 2n algorithm: ";
-    found_2n ? cout << "Found" : cout << "Not found";
+    //Выводим результат
+    cout << "Используя алгоритм 2n: ";
+    found_2n ? cout << "Найден" : cout << "Не найден";
     cout << endl;
 
-    cout << "Using the logn algorithm: ";
-    found_logn ? cout << "Found" : cout << "Not found";
+    cout << "Используя алгоритм logn: ";
+    found_logn ? cout << "Найден" : cout << "Не найден";
     cout << endl;
 
-    cout << "Using the n^2 algorithm: ";
-    found_n2 ? cout << "Found" : cout << "Not found";
+    cout << "Используя алгоритм n^2: ";
+    found_n2 ? cout << "Найден" : cout << "Не найден";
     cout << endl;
 
     return 0;
