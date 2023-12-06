@@ -57,6 +57,8 @@ bool quadraticSearch(const vector<vector<int>>& arr, int target) {
 }
 
 int main() {
+    setlocale(LC_ALL, "Russian");
+    
     //Создаём двумерный массив
     vector<vector<int>> arr = {
         {1, 2, 3},
